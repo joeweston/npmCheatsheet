@@ -63,6 +63,7 @@ button{
   padding: 20px 10px;
   box-shadow: inset 0 0 4px 1px #e6e6e6;
   height: calc(100vh - 130px);
+  overflow-y: auto;
 }
 #example-text{
   font-family: 'Inconsolata',"Lucidia Console", Monaco, monospace;
