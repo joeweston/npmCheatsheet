@@ -49,6 +49,11 @@ button{
      -moz-box-shadow: 0 0 0px 1px #000;
           box-shadow: 0 0 0px 1px #000;
 }
+#example-div-container{
+  width:200px;
+  display: flex;
+  justify-content: center;
+}
 #example-div{
   margin-top: 70px;
   height: 200px;

@@ -33,6 +33,20 @@ $(document).ready(function(){
     UI.applyBorderRaduis();
   })
 
+  $("#background-color-container").on("change","input[type=color]", function(){
+    $(this).siblings(".color-value").text( $(this).val() )
+    $(".example").css( {"background-color": $(this).val()} );
+  })
+
+  $("#height-slide-container").on("change","input[type=range]", function(){
+    $(this).siblings(".slide-value").text( $(this).val() );
+    $(".example").css( {"height": $(this).val()} );
+  })
+
+  $("#width-slide-container").on("change","input[type=range]", function(){
+    $(this).siblings(".slide-value").text( $(this).val() );
+    $(".example").css( {"width": $(this).val()} );
+  })
 
 });
 
