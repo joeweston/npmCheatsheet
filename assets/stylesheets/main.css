@@ -1,0 +1,85 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+h1{
+  margin: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+h2{
+  font-size: 20px;
+}
+h3{
+  font-size: 18px;
+}
+#main-container{
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-around;
+}
+#main-form{
+  width: 310px;
+  height: calc(100vh - 130px);
+  overflow-y: auto;
+  box-shadow: inset 0 0 4px 1px #e6e6e6;
+}
+button{
+  margin-top: 5px;
+}
+.wiget{
+  border: 2px solid #444;
+  padding: 10px 10px;
+  margin: 6px;
+}
+#outline-container{
+  padding: 10px;
+}
+
+#inset-container{
+  padding: 10px;
+}
+#extra-controls{
+  padding: 10px;
+}
+.example{
+  -webkit-box-shadow: 0 0 0px 1px #000;
+     -moz-box-shadow: 0 0 0px 1px #000;
+          box-shadow: 0 0 0px 1px #000;
+}
+#example-div{
+  margin-top: 70px;
+  height: 200px;
+  width: 200px;
+}
+#text-container{
+  padding: 20px 10px;
+  box-shadow: inset 0 0 4px 1px #e6e6e6;
+}
+#example-text{
+  font-family: 'Inconsolata',"Lucidia Console", Monaco, monospace;
+  font-size: 12px;
+  white-space: pre;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+}
+
+.hidden{
+  display: none;
+}
+
+.slide-container{
+  width: 100%;
+}
+.slider {
+  width:100%;
+}
+
+
+
+
+
