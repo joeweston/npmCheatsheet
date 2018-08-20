@@ -71,6 +71,7 @@ button{
   display: flex;
   justify-content: center;
   width: 300px;
+  height: calc(100vh - 130px);
 }
 
 .hidden{
