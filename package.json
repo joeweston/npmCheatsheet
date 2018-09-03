@@ -1,0 +1,17 @@
+{
+  "name": "syntaxhighlighter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.9.3",
+    "rainbow-code": "^2.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss" : "node-sass --watch assets/stylesheets/scss -o assets/stylesheets/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,59 @@
+$default-font-size: 12px;
+$default-line-height: 16px;
+$default-font-family: arial;
+$default-background: #ffffff;
+$secondary-color: rgb(253, 246, 227);
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.hidden{
+  display: none;
+}
+
+body{
+  font-size: $default-font-size;
+  font-family: arial;
+  background-color: $default-background;
+}
+h1{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+pre{
+  font-size: $default-font-size;
+  overflow-x: auto;
+  line-height: $default-line-height;
+  margin: 4px 0;
+  border-radius: 0px;
+  em{
+    background: white;
+  }
+}
+#main-container{
+  max-width: calc(100vw - 40px);
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.card{
+  max-width: 500px;
+  margin: 0 10px;
+  border: 3px solid $secondary-color;
+  padding-bottom: 5px;
+  h2{
+    padding: 10px 0;
+    font-size: 20px;
+  }
+  p{
+    line-height: $default-line-height;
+  }
+}

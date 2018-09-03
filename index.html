@@ -5,257 +5,153 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 
-  <title>Border Generator</title>
+  <title>Npm Cheatsheet</title>
 
   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/stylesheets/reset.css">
-  <link rel="stylesheet" href="assets/stylesheets/main.css">
+
+  <link rel="stylesheet" href= "node_modules/rainbow-code/themes/css/solarized-light.css" type="text/css">
+
+  <link rel="stylesheet" href="assets/stylesheets/css/main.css">
+
+
 
 
 </head>
 <body>
-  <h1>Multiple Border Generator (using box shadow)</h1>
+  <h1>Npm CheatSheet</h1>
   <div id="main-container">
-    <div id="main-form">
-      <div id="outline-container">
-        <h2>Outlines</h2>
-        <button type="button" id="add-outline">Add Outline</button>
-        <button type="button" id="remove-outline">Remove Outline</button>
-        <div id="outline-1" class="wiget">
-          <h3>Outline 1</h3>
-          <div class="slide-container">
-            Blur:  <span class="slide-value">0</span>px
-            <input type="range" min="0" max="100" class="slider" name="blur" value="0">
-          </div>
-          <div class="slide-container">
-            (visual) Size:  <span class="slide-value">1</span>px
-            <input type="range" min="0" max="100" class="slider" name="size" value="1">
-          </div>
-          <div class="color-container">
-          Color:
-            <input type="color" name="color" value = "#000000"> <span class="color-value">#000000</span>
-          </div>
-        </div>
-        <div id="outline-2" class="hidden wiget">
-          <h3>Outline 2</h3>
-          <div class="slide-container">
-            Blur:  <span class="slide-value">0</span>px
-            <input type="range" min="0" max="100" class="slider" name="blur" value="0">
-          </div>
-          <div class="slide-container">
-            (visual) Size:  <span class="slide-value">1</span>px
-            <input type="range" min="0" max="100" class="slider" name="size" value="1">
-          </div>
-          <div class="color-container">
-          Color:
-            <input type="color" name="color" value = "#444444"> <span class="color-value">#444444</span>
-          </div>
-        </div>
-        <div id="outline-3" class="hidden wiget">
-          <h3>Outline 3</h3>
-          <div class="slide-container">
-            Blur:  <span class="slide-value">0</span>px
-            <input type="range" min="0" max="100" class="slider" name="blur" value="0">
-          </div>
-          <div class="slide-container">
-            (visual) Size:  <span class="slide-value">1</span>px
-            <input type="range" min="0" max="100" class="slider" name="size" value="1">
-          </div>
-          <div class="color-container">
-          Color:
-            <input type="color" name="color" value = "#888888"> <span class="color-value">#888888</span>
-          </div>
-        </div>
-        <div id="outline-4" class="hidden wiget">
-          <h3>Outline 4</h3>
-          <div class="slide-container">
-            Blur:  <span class="slide-value">0</span>px
-            <input type="range" min="0" max="100" class="slider" name="blur" value="0">
-          </div>
-          <div class="slide-container">
-            (visual) Size:  <span class="slide-value">1</span>px
-            <input type="range" min="0" max="100" class="slider" name="size" value="1">
-          </div>
-          <div class="color-container">
-          Color:
-            <input type="color" name="color" value = "#bbbbbb"> <span class="color-value">#bbbbbb</span>
-          </div>
-        </div>
-        <div id="outline-5" class="hidden wiget">
-          <h3>Outline 5</h3>
-          <div class="slide-container">
-            Blur:  <span class="slide-value">0</span>px
-            <input type="range" min="0" max="100" class="slider" name="blur" value="0">
-          </div>
-          <div class="slide-container">
-            (visual) Size:  <span class="slide-value">1</span>px
-            <input type="range" min="0" max="100" class="slider" name="size" value="1">
-          </div>
-          <div class="color-container">
-          Color:
-            <input type="color" name="color" value = "#bbbbbb"> <span class="color-value">#bbbbbb</span>
-          </div>
-        </div>
-        <div id="outline-6" class="hidden wiget">
-          <h3>Outline 6</h3>
-          <div class="slide-container">
-            Blur:  <span class="slide-value">0</span>px
-            <input type="range" min="0" max="100" class="slider" name="blur" value="0">
-          </div>
-          <div class="slide-container">
-            (visual) Size:  <span class="slide-value">1</span>px
-            <input type="range" min="0" max="100" class="slider" name="size" value="1">
-          </div>
-          <div class="color-container">
-          Color:
-            <input type="color" name="color" value = "#bbbbbb"> <span class="color-value">#bbbbbb</span>
-          </div>
-        </div>
-      </div>
-      <div id="inset-container">
-        <h2>Insets</h2>
-        <button type="button" id="add-inset">Add Inset</button>
-        <button type="button" id="remove-inset">Remove Inset</button>
-        <div id="inset-1" class="hidden wiget">
-          <h3>Inset 1</h3>
-          <div class="slide-container">
-            Blur:  <span class="slide-value">0</span>px
-            <input type="range" min="0" max="100" class="slider" name="blur" value="0">
-          </div>
-          <div class="slide-container">
-            (visual) Size:  <span class="slide-value">1</span>px
-            <input type="range" min="0" max="100" class="slider" name="size" value="1">
-          </div>
-          <div class="color-container">
-          Color:
-            <input type="color" name="color" value = "#999999"> <span class="color-value">#999999</span>
-          </div>
-        </div>
-        <div id="inset-2" class="hidden wiget">
-          <h3>Inset 2</h3>
-          <div class="slide-container">
-            Blur:  <span class="slide-value">0</span>px
-            <input type="range" min="0" max="100" class="slider" name="blur" value="0">
-          </div>
-          <div class="slide-container">
-            (visual) Size:  <span class="slide-value">1</span>px
-            <input type="range" min="0" max="100" class="slider" name="size" value="1">
-          </div>
-          <div class="color-container">
-          Color:
-            <input type="color" name="color" value = "#bbbbbb"> <span class="color-value">#bbbbbb</span>
-          </div>
-        </div>
-        <div id="inset-3" class="hidden wiget">
-          <h3>Inset 3</h3>
-          <div class="slide-container">
-            Blur:  <span class="slide-value">0</span>px
-            <input type="range" min="0" max="100" class="slider" name="blur" value="0">
-          </div>
-          <div class="slide-container">
-            (visual) Size:  <span class="slide-value">1</span>px
-            <input type="range" min="0" max="100" class="slider" name="size" value="1">
-          </div>
-          <div class="color-container">
-          Color:
-            <input type="color" name="color" value = "#dddddd"> <span class="color-value">#dddddd</span>
-          </div>
-        </div>
-        <div id="inset-4" class="hidden wiget">
-          <h3>Inset 4</h3>
-          <div class="slide-container">
-            Blur:  <span class="slide-value">0</span>px
-            <input type="range" min="0" max="100" class="slider" name="blur" value="0">
-          </div>
-          <div class="slide-container">
-            (visual) Size:  <span class="slide-value">1</span>px
-            <input type="range" min="0" max="100" class="slider" name="size" value="1">
-          </div>
-          <div class="color-container">
-          Color:
-            <input type="color" name="color" value = "#eeeeee"> <span class="color-value">#eeeeee</span>
-          </div>
-        </div>
-        <div id="inset-5" class="hidden wiget">
-          <h3>Inset 5</h3>
-          <div class="slide-container">
-            Blur:  <span class="slide-value">0</span>px
-            <input type="range" min="0" max="100" class="slider" name="blur" value="0">
-          </div>
-          <div class="slide-container">
-            (visual) Size:  <span class="slide-value">1</span>px
-            <input type="range" min="0" max="100" class="slider" name="size" value="1">
-          </div>
-          <div class="color-container">
-          Color:
-            <input type="color" name="color" value = "#eeeeee"> <span class="color-value">#eeeeee</span>
-          </div>
-        </div>
-        <div id="inset-6" class="hidden wiget">
-          <h3>Inset 6</h3>
-          <div class="slide-container">
-            Blur:  <span class="slide-value">0</span>px
-            <input type="range" min="0" max="100" class="slider" name="blur" value="0">
-          </div>
-          <div class="slide-container">
-            (visual) Size:  <span class="slide-value">1</span>px
-            <input type="range" min="0" max="100" class="slider" name="size" value="1">
-          </div>
-          <div class="color-container">
-          Color:
-            <input type="color" name="color" value = "#dddddd"> <span class="color-value">#dddddd</span>
-          </div>
-        </div>
-      </div>
-      <div id="extra-controls">
-        <h2>Extra Controls</h2>
-        <div class="wiget">
-          <div class="slide-container">
-            Border Radius:  <span class="slide-value">0</span>px
-            <input type="range" min="0" max="100" class="slider" name="border-radius" value="0">
-          </div>
-          <div id="height-slide-container">
-            Height:  <span class="slide-value">200</span>px
-            <input type="range" min="0" max="1000" class="slider" name="size" value="200">
-          </div>
-          <div id="width-slide-container">
-            Width:  <span class="slide-value">200</span>px
-            <input type="range" min="0" max="200" class="slider" name="size" value="200">
-          </div>
-          <div id="background-color-container">
-            Background Color:
-            <input type="color" name="color" value = "#ffffff"> <span class="color-value">#ffffff</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="example-div-container">
-      <div id="example-div" class="example">
+    <div class="card">
+      <h2>SCSS Setup</h2>
+      <p>Via the terminal navigate to your project. And then enter the command:</p>
+      <pre><code>npm init</code></pre>
+      <p>Answer all the questions (running the command <code>npm init -y</code> instead skips all the questions);
+      A package.json should appear.
+      Now install Node-sass with this line:</p>
+      <pre><code>npm install node-sass</code></pre>
+      <p>Node sass should now be under dependencies in <code>package.json</code>.
+      Now create tow folders - one to store the scss files and one to store css in which scss it to be compiled to.<p>
+      <p>Add the line below to the <code>scripts</code> section of the <code>package.json</code> file Using whatever reltave paths you need.:</p>
+      <pre><code>  "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      <em>"scss" : "node-sass --watch assets/stylesheets/scss -o assets/stylesheets/css"</em>
+    },</code></pre>
+      <p>The final step is to run this script. Simply type the following into the terminal and, as long as the terminal widows is still open, every committed (saved) change to a scss file will up date the corresponding css file.</p>
+      <pre><code>npm run scss</code></pre>
+      <p>The terminal window also doubles up as a Debugger!</p>
+      <h2>Minfy your compiled CSS?</h2>
+      <p>Just add the flag <code>--output-style compressed</code>. It's a bit slow so remove the <code>--watch</code> flag.</p>
+      <pre><code>"scss-min": "node-sass src/assets/stylesheets -o dist/assets/stylesheets --output-style compressed",</code></pre>
 
-      </div>
+    <h2>Basic Webpack 4 Setup - for making node.js work in the browser</h2>
+    <p>Create you folder navigate to it and install webpack 4</p>
+    <pre><code>mkdir webpack_test
+cd webpack_test
+npm install webpack webpack-cli --save-dev</code></pre>
+    <p>Now edit the <code>package.json</code> file</p>
+    <pre><code>  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    <em>"dev": "webpack --mode development</em></code></pre>
+    <p>Create an entry source - code that will be complied to browser freindly js</p>
+    <pre><code>mkdir src
+touch index.js</code></pre>
+    <p>Now put a console log in that file to test it</p>
+    <pre><code>npm run dev</code></pre>
+    <p>A <code>dist/main.js</code> will magically appear.</p>
+    <p>Now you can automatically set this to work every time you save the index file:</p>
+    <code><pre>"dev": "webpack --mode development --watch/code></pre>
+    <p>You can also choose which files compile to which with <code>--entry</code> and <code>--output</code></p>
+    <code><pre>"dev": "webpack --mode development ./entry/path/index.js --output ./output/path/main.js --watch</code></pre>
+    <p>Note, "dev" can be interchanged with "build" for identical effects or for different outputs - i.e. using --watch for dev and build without. The --mode development can be changed to --mode production to add the additional process of minimising the file.</p>
+    <p>The following is a possible setup.</p>
+    <pre><code>  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    <em>"build": "webpack --mode production ./src/assets/scripts/index.js --output ./dist/scripts/main.js",</em>
+    <em>"dev": "webpack --mode development ./src/assets/scripts/index.js --output ./dist/scripts/main.js --watch"</em>
+  },</code></pre>
+    <h2>Deploying single page webpack app to github pages</h2>
+    <p>Create the remote reporsitory on github or an other providor.</p>
+    <p>Create the git repositry and a .gitignore file with at least the line <code>/node_modules</code></p>
+    <pre><code>git init
+touch .gitignore
+echo "/node_modules" >> .gitignore
+git add -A
+git commit -m'initial commit'
+git remote add origin https://github.com/[[username]]/[[appname]].git
+git push -u origin master
+npm install --save gh-pages
+</code></pre>
+  Make sure all your files to be published are in the same folder, with a structure like the following.
+  <pre><code>folderName/
+    index.html
+    all-other-files-and-or-folders/</code></pre>
+  <p>Add these lines to your <code>package.json</code> file</p>
+  <pre><code>{
+  ...
+  <em>"homepage": "https://[[username]].github.io/[[appName]]/",</em>
+  ...
+  "scripts": {
+    ...
+    <em>"predeploy": "npm run build", //optional provided youn have a build script</em>
+    <em>"deploy": "gh-pages -d [[folderName]]"</em>
+    ...
+  },</code></pre>
+  <p>Now run the script</p>
+  <pre><code>npm run deploy</code></pre>
+    <p>Done</p>
     </div>
-    <div id="text-container">
-      <h2>CSS</h2>
-      <div id="example-text">
--webkit-box-shadow:
-                   0 0 0px 1px #000; 
-   -moz-box-shadow:
-                   0 0 0px 1px #000;
-        box-shadow:
-                   0 0 0px 1px #000;
-      </div>
+
+    <div class="card">
+      <h2>ReactJS Setup</h2>
+      <p>Via the terminal navigate to the folder that will contain your project. And then enter the commands:</p>
+      <pre><code>npx create-react-app test_app
+cd test_app
+npm start</code></pre>
+      <p>You now have a working react app.</p>
+      <h2>ReactJS Github Hosting</h2>
+      <p>To deploy the react app to github, create a new github remote repository online. (other sites i.e. bitbucket are an option). Now to the usual git commands - the git ignore file has alreay been added so don't worry about it.</p>
+      <pre><code>git init
+git add -A
+git commit -m'initial commit'
+git remote add origin https://github.com/[[username]]/test_app.git
+git push -u origin master</code></pre>
+    <p>Next install github pages:</p>
+    <pre><code>npm install --save gh-pages</code></pre>
+    <p>If any warnings about peer dependencies show up install them then re-install gh-pages - ajv@^6.0.0 is a common one.</p>
+    <pre><code>npm install ajv@^6.0.0
+npm install --save gh-pages</code></pre>
+    <p>Next, modify the <code>package.json</code> file</p>
+    <pre><code>{
+  "name": "test_app",
+  "version": "0.1.0",
+  "private": true,
+  <em>"homepage": "https://[[username]].github.io/test_app/",</em>
+  "dependencies": {
+    "gh-pages": "^1.2.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-scripts": "1.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    <em>"predeploy": "npm run build",</em>
+    <em>"deploy": "gh-pages -d build",</em>
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}</code></pre>
+  <p>Now lauch it with:</p>
+  <pre><code>npm run deploy</code></pre>
+  <p>And now <code>"https://[[username]].github.io/test_app/"</code> is live! </p>
     </div>
+
+
   </div>
 
-
-
-
-
-
-
-  <script src="assets/scripts/jquery-3.3.1.min.js"></script>
-  
-  <script src="assets/scripts/generator.js"></script>
+  <script src="assets/scripts/rainbow.min.js"></script> 
+  <script src="assets/scripts/generic.js"></script>
+  <script src="assets/scripts/javascript.js"></script>
   <script src="assets/scripts/main.js"></script>
 </body>

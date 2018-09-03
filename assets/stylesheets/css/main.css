@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.hidden {
+  display: none; }
+
+body {
+  font-size: 12px;
+  font-family: arial;
+  background-color: #ffffff; }
+
+h1 {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 25px; }
+
+pre {
+  font-size: 12px;
+  overflow-x: auto;
+  line-height: 16px;
+  margin: 4px 0;
+  border-radius: 0px; }
+  pre em {
+    background: white; }
+
+#main-container {
+  max-width: calc(100vw - 40px);
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center; }
+
+.card {
+  max-width: 500px;
+  margin: 0 10px;
+  border: 3px solid #fdf6e3;
+  padding-bottom: 5px; }
+  .card h2 {
+    padding: 10px 0;
+    font-size: 20px; }
+  .card p {
+    line-height: 16px; }
