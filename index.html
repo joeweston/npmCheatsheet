@@ -44,7 +44,7 @@
       <p>Just add the flag <code>--output-style compressed</code>. It's a bit slow so remove the <code>--watch</code> flag.</p>
       <pre><code>"scss-min": "node-sass src/assets/stylesheets -o dist/assets/stylesheets --output-style compressed",</code></pre>
 
-    <h2>Basic Webpack 4 Setup - for making node.js work in the browser</h2>
+    <h2>Basic Webpack 4 Setup - for compliling node.js to work in the browser</h2>
     <p>Create you folder navigate to it and install webpack 4</p>
     <pre><code>mkdir webpack_test
 cd webpack_test
@@ -60,7 +60,7 @@ touch index.js</code></pre>
     <pre><code>npm run dev</code></pre>
     <p>A <code>dist/main.js</code> will magically appear.</p>
     <p>Now you can automatically set this to work every time you save the index file:</p>
-    <code><pre>"dev": "webpack --mode development --watch/code></pre>
+    <code><pre>"dev": "webpack --mode development --watch/code></pre></code>
     <p>You can also choose which files compile to which with <code>--entry</code> and <code>--output</code></p>
     <code><pre>"dev": "webpack --mode development ./entry/path/index.js --output ./output/path/main.js --watch</code></pre>
     <p>Note, "dev" can be interchanged with "build" for identical effects or for different outputs - i.e. using --watch for dev and build without. The --mode development can be changed to --mode production to add the additional process of minimising the file.</p>
